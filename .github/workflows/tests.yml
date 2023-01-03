@@ -3,24 +3,25 @@ name: tests
 on: [workflow_dispatch]
 
 jobs:
-  runs-on: ${{ matrix.os }}
-  defaults:
-    run:
-      shell: bash -el {0}
-  strategy:
-    matrix:
-      os: ["ubuntu-latest", "macos-latest", "windows-latest"]
-      python-version: ["3.8"]
-  steps:
-    - uses: actions/checkout@v2
-    - uses: conda-incubator/setup-miniconda@v2
-      with:
-        activate-environment: env_master_pip
-        environment-file: conda/env_master_pip.yml
-        python-version: 3.8
-        auto-activate-base: false
-    - run: |
-        conda info
-        pip install pytest pytest-cov
-        conda list
-        pytest
+  build:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash -el {0}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "macos-latest", "windows-latest"]
+        python-version: ["3.8"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: env_master_pip
+          environment-file: conda/env_master_pip.yml
+          python-version: 3.8
+          auto-activate-base: false
+      - run: |
+          conda info
+          pip install pytest pytest-cov
+          conda list
+          pytest
