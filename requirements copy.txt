@@ -1,0 +1,48 @@
+jupyterlab
+torch
+torchvision
+torchaudio
+transformers
+tensorflow
+scikit-learn
+scipy
+pandas
+matplotlib
+pillow
+pyspark
+pyfim
+pyclustering
+pydotplus
+tweepy
+lightgbm
+tqdm
+requests
+Rtree
+geopandas
+# DVDJ Rinzivillo
+altair
+# ALL Sirbu
+seaborn
+# DBSCC Fagni
+selenium >= 4.7.2
+requests
+# DMML Guidotti
+ipython
+# DL MRA Amato
+opencv-python
+# HPSA Trasarti
+py4j
+#  IR Ferragina
+unidecode
+simplejson
+nltk
+wordcloud
+elasticsearch==7.11.0
+lxml
+scrapy
+# TWM Trani
+gensim
+# TSMD nanni
+scikit-mobility
+xai-library
+simpletransformers

@@ -1,0 +1,56 @@
+name: env_master_pip
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.8
+    - tensorflow
+    - lightgbm
+    - pip
+    - pip:
+        - jupyterlab
+        - torch
+        - torchvision
+        - torchaudio
+        - transformers
+        - scikit-learn
+        - scipy
+        - pandas
+        - matplotlib
+        - pillow
+        - pyspark
+        - pyfim
+        - pyclustering
+        - pydotplus
+        - tweepy
+        - tqdm
+        - requests
+        - Rtree
+        - geopandas
+      # DVDJ Rinzivillo
+        - altair
+      # ALL Sirbu
+        - seaborn
+      # DBSCC Fagni
+        - selenium >= 4.7.2
+        - requests
+      # DMML Guidotti
+        - ipython
+      # DL MRA Amato
+        - opencv-python
+      # HPSA Trasarti
+        - py4j
+      #  IR Ferragina
+        - unidecode
+        - simplejson
+        - nltk
+        - wordcloud
+        - elasticsearch==7.11.0
+        - lxml
+        - scrapy
+      # TWM Trani
+        - gensim
+      # TSMD nanni
+        - scikit-mobility
+        - xai-library
+        - simpletransformers
