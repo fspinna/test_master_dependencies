@@ -34,7 +34,7 @@ import torchvision
 import cv2
 import transformers
 import rtree
-import xailib
+# import xailib
 
 import sys
 import pytest
@@ -77,7 +77,7 @@ TEST_INPUTS = [
     "cv2",
     "transformers",
     "rtree",
-    "xailib",
+    # "xailib",
 ]
 
 

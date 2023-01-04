@@ -34,7 +34,7 @@ import torchvision
 import cv2
 import transformers #
 import rtree
-import xailib
+# import xailib
 
 
 def hello_world():
