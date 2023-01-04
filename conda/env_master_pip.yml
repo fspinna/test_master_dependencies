@@ -52,5 +52,5 @@ dependencies:
         - gensim
       # TSMD nanni
         - scikit-mobility
-        - xai-library
+        # - xai-library
         - simpletransformers
